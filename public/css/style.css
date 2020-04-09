@@ -5,17 +5,20 @@ body {
 	background-color: #ffffff;
 	font-size: 14pt;
 }
+
 a {
   color: #00B7FF;
 }
 
 
-footer{
+footer div{
+	font-family: 'Fira Sans', sans-serif;
   background-color: #01358d ;
   color: white;
   height: 50px;
   width: 100%;
   text-align: right;
+  font-size: 32pt;
   vertical-align: middle;
 }
 
