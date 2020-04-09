@@ -10,7 +10,6 @@ a {
   color: #00B7FF;
 }
 
-
 footer div{
 	font-family: 'Fira Sans', sans-serif;
   background-color: #01358d ;
@@ -22,4 +21,10 @@ footer div{
   vertical-align: middle;
 }
 
-
+heade #faixa{
+  height: 30px;
+  width: 100%;
+  background-color: #01358d ;
+  font-size: 32pt;
+  
+}
