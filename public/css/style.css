@@ -10,21 +10,38 @@ a {
   color: #00B7FF;
 }
 
-footer div{
+footer div,
+#faixa{
 	font-family: 'Fira Sans', sans-serif;
   background-color: #01358d ;
   color: white;
   height: 50px;
   width: 100%;
-  text-align: right;
-  font-size: 32pt;
-  vertical-align: middle;
+  font-size: 24px;
+  vertical-align: middle ;
+  font-weight: 700;
 }
 
-heade #faixa{
-  height: 30px;
+footer div{
+  text-align: right;  
+}
+
+#faixa{
+  text-align: left;  
+}
+
+.containerHeader{
   width: 100%;
-  background-color: #01358d ;
-  font-size: 32pt;
-  
+}
+
+.col-3{
+  background-color: #01358d;
+}
+
+.col-2{
+  background-color: #defa5d;
+}
+
+.col-1{
+  background-color: #e5e5df;
 }
