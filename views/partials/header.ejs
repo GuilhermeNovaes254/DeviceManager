@@ -1,30 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title><%= title %></title>
-    <link rel='stylesheet' type="text/css" href="css/bootstrap.min.css">
-    <link rel='stylesheet' type="text/css" href='css/reset.css'/>
-    <link rel='stylesheet' type="text/css" href='css/style.css'>  
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Evoy - Device Manager</title>
+
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sidebar.js"></script>
     
-    <div id='faixa'>evoy.io HEADER</div>
-    <div class="container">
-      <div class="row">
-        <div class="containerHeader">
-          <div class="row">
-            <div class="col-3">Logo</div>
-            <div class="col-1">Espaço</div>
-            <div class="col-2">Devs</div>
-            <div class="col-1">Espaço</div>
-            <div class="col-2">Status</div>
-            <div class="col-1">Espaço</div>
-            <div class="col-2">Grafico</div>
-            <div class="w-100"></div>
-          </div>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-home"></i>
+                        Home
+                    </a>
+
+                </li>
+                
+            <li >
+                    <a href="#">
+                        <i class="glyphicon glyphicon-phone"></i>
+                        Devices
+                    </a>
+
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        Entities
+                    </a>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-duplicate"></i>
+                        Profiles
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-link"></i>
+                        Users
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </nav>
+
+        <!-- Page Content Holder -->    
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="glyphicon glyphicon-align-justify"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </div>
+
     </div>
-  </head>
 
-  <body>
 
+</body>
+
+</html>
