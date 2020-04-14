@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,500;0,700;1,700&display=swap');
 
+html{
+    background: #ff0000;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
-    background: #fafafa;
+
+    background: #e#ff0000;
 }
 
 p {
@@ -10,296 +15,140 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #000;
 }
 
-a, a:hover, a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
-}
-
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
-}
-
-i, span {
-    display: inline-block;
-}
-
-footer div,
-#faixa{
-  font-family: 'Fira Sans', sans-serif;
-  background-color: #01358d ;
-  color: white;
-  height: 50px;
-  width: 100%;
-  font-size: 24px;
-  vertical-align: middle ;
-  font-weight: 700;
-}
-
-footer div{
-  text-align: right;  
-}
-
-#faixa{
-  text-align: left;  
-}
-
-.containerHeader{
-  width: 100%;
-}
-
-.col-3{
-  background-color: #01358d;
-}
-
-.col-2{
-  background-color: #defa5d;
-}
-
-.col-1{
-  background-color: #e5e5df;
+/* Header */
+.header {
+    width: auto ;
+    height: 170px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    background-color: #8d015e;
+    transition: margin-left .3s;
+    /* If you want a transition effect */
 }
 
 
-
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
-.wrapper {
-    display: flex;
-    align-items: stretch;
+/* The sidebar menu */
+.sidebar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 0;
+    /* Stay on top */
+    top: 0px;
+    left: 0;
+    background-color: #ff55ff;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    margin-top: 8px;
+    margin-left: 8px;
+    /* Place content 60px from the top */
+    transition: 0.3s;
+    /* 0.5 second transition effect to slide in the sidebar */
 }
 
-#sidebar {
-    min-width: 120px;
-    max-width: 120px;
-    background: #fff;
-    color: #01358d;
-    transition: all 0.1s;
-}
-
-#sidebar.active {
-    min-width: 80px;
-    max-width: 80px;
-    text-align: center;
-}
-
-#sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
-    display: none;
-}
-
-#sidebar.active .sidebar-header strong {
-    display: block;
-}
-
-#sidebar ul li a {
-    text-align: left;
-}
-
-#sidebar.active ul li a {
-    padding: 20px 10px;
-    text-align: center;
-    font-size: 0.85em;
-}
-
-#sidebar.active ul li a i {
-    margin-right:  0;
-    display: block;
-    font-size: 1.8em;
-    margin-bottom: 5px;
-}
-
-#sidebar.active ul ul a {
-    padding: 10px !important;
-}
-
-#sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before {
-    top: auto;
-    bottom: 5px;
-    right: 50%;
-    -webkit-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    transform: translateX(50%);
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #01358d;
-}
-
-#sidebar .sidebar-header strong {
-    display: none;
-    font-size: 1.8em;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #fff;
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-#sidebar ul li a:hover {
-    color: #fff;
-    background: #01358d;
-}
-#sidebar ul li a i {
-    margin-right: 10px;
-}
-
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #01358d;
-}
-
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-    content: '\e259';
-    display: block;
-    position: absolute;
-    right: 20px;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 0.6em;
-}
-a[aria-expanded="true"]::before {
-    content: '\e260';
-}
-
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
+/* The sidebar links */
+.sidebar{
     background: #ffffff;
-}
-
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
+    height: 100hv;
 }
 
 
 
 
-.btn-info{
-    background-color: #01358d;
-}
-
-.btn-info:hover{
-    background-color: #01358d;
-}
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-#content {
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-}
-
-#conteudo{
-    background-color:   blue;
-    height: auto;
+.sidebar #logoHeader {
+    background-image: url('/images/avatar-evoy-fundoazul.png');
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: cover;
+    scale: auto;
     width: auto;
+    height: 170px;
+    display: block;
+    top: 0;
+    left: 0;
+    margin-bottom: 15px;
+    margin-right: 15px;
+
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar li{
+    color: #e24747;
+    list-style-type: square;
+    size: 40px;
+}
+
+.sidebar li:hover{
+    color: #01358d;
+    list-style-type: square;
+    size: 40px;
 }
 
 
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-@media (max-width: 768px) {
-    #sidebar {
-        min-width: 80px;
-        max-width: 80px;
-        text-align: center;
-        margin-left: -80px !important ;
-    }
-    a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-        top: auto;
-        bottom: 5px;
-        right: 50%;
-        -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-        transform: translateX(50%);
-    }
-    #sidebar.active {
-        margin-left: 0 !important;
-    }
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #e24747;
+}
 
-    #sidebar .sidebar-header h3, #sidebar .CTAs {
-        display: flex;
-    }
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 115px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-top: 60px;
+}
 
-    #sidebar .sidebar-header strong {
-        display: block;
-    }
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
 
-    #sidebar ul li a {
-        padding: 20px 10px;
-    }
-
-    #sidebar ul li a span {
-        font-size: 0.85em;
-    }
-    #sidebar ul li a i {
-        
-        margin-right:  0;
-        display: block;
-        
-    }
-    #sidebar ul li a button {
-        margin-right:  0;
-        display: flex;
-    }
+.openbtn:hover {
+    background-color: #e24747;
+}
 
 
-    #sidebar ul ul a {
-        padding: 10px !important;
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .3s;
+    /* If you want a transition effect */
+    padding: 20px;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
     }
 
-    #sidebar ul li a i {
-        font-size: 1.3em;
-        
-
+    .sidebar a {
+        font-size: 18px;
     }
-    #sidebar {
-        margin-left: 0;
-    }
-
 }
