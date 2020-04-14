@@ -3,7 +3,6 @@ function openNav() {
   document.getElementById("main").style.marginLeft = "200px";
   document.getElementById("myHeader").style.marginLeft = "200px";
   document.getElementById("myHeader").style.marginRight = "0px";
-
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
