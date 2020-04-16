@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,500;0,700;1,700&display=swap');
 
-html{
+html {
     background: #e3e3e3;
 }
 
@@ -20,25 +20,154 @@ p {
     color: #000;
 }
 
-/* Header */
+/************ Header ************/
 header {
-    overflow: visible;  
-    top:0;
-    height: 170px;
+    overflow: visible;
+    top: 0;
+    height: auto;
     margin-left: 0px;
     margin-top: 0px;
     margin-right: 0px;
     background-color: #ffffff;
     transition: margin-left .3s;
-    /* If you want a transition effect */
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items : center;
+}
+
+
+header #devAtivos {
+    flex-direction: column;
+    text-align: center;
+    align-items : center;
+    width: 20%;
+    max-height: auto;
+    margin: 10px 0px;
+}
+
+
+header #status {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    max-height: auto;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+
+header #status1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    max-height: auto;
+    margin: 20px;
+    vertical-align: middle;
+    position: relative;
+    margin: 10px 10px;
+    align-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: space-around;
+}
+
+header #status2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    max-height: auto;
+    box-sizing: border-box;
+    align-content: center;
+    position: relative;
+    margin: 10px 10px;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
 
 }
+
+header #status #status1 #online {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    align-items : center;
+}
+
+header #status #status1 #online #ball {
+    display: flex;
+    background-color: #01358d;
+}
+
+
+header #status #status1 #pending {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    align-items : center;
+}
+
+header #status #status1 #pending #ball {
+    display: flex;
+    background-color: #E24747;
+}
+
+
+header #status #status2 #offline {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    align-items : center;
+}
+
+header #status #status2 #offline #ball {
+    display: flex;
+    background-color: #707070;
+
+}
+
+
+header #status #status2 #notActivated {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    align-items : center;
+}
+
+header #status #status2 #notActivated #ball {
+    display: flex;
+    background-color: #000000;
+}
+
+
+#quant,
+#quantPorcent,
+#statusNome {
+    margin: 5px;
+    vertical-align: super;
+}
+
+
+/******** Fim Header ************/
 
 
 /* The sidebar menu */
 .sidebar {
     font-family: 'Fira Sans', sans-serif;
-    
+
     height: 100%;
     /* 100% Full-height */
     width: 0;
@@ -60,7 +189,7 @@ header {
 }
 
 /* The sidebar links */
-.sidebar{
+.sidebar {
     background: #ffffff;
     height: 100hv;
     margin-right: 15px;
@@ -70,7 +199,7 @@ header {
 .sidebar #logoHeader {
 
     background-image: url('/images/avatar-evoy-fundoazul.png');
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     scale: auto;
@@ -79,7 +208,7 @@ header {
     display: block;
     top: 0;
     left: 0;
-    
+
 }
 
 .sidebar a {
@@ -91,13 +220,13 @@ header {
     transition: 0.3s;
 }
 
-.sidebar li{
+.sidebar li {
     color: #e24747;
     list-style-type: square;
     size: 40px;
 }
 
-.sidebar li:hover{
+.sidebar li:hover {
     color: #01358d;
     list-style-type: square;
     size: 40px;
@@ -125,8 +254,9 @@ header {
     cursor: pointer;
     background-color: #000000;
     color: white;
-    padding: 10px 15px;
+    text-align: center;
     border: none;
+    width: 3vw;
 }
 
 .openbtn:hover {
