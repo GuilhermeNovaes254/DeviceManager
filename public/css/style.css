@@ -40,12 +40,15 @@ header {
 
 
 header #devAtivos {
+    display: flex;
+    font-size: 35px;
     flex-direction: column;
     text-align: center;
     align-items : center;
     width: 20%;
     max-height: auto;
     margin: 10px 0px;
+
 }
 
 
