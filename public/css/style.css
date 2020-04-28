@@ -194,20 +194,20 @@ header #status #status2 #notActivated #ball {
 /* The sidebar links */
 .sidebar {
     background: #ffffff;
-    height: 100hv;
+    height: 90hv;
     margin-right: 15px;
 }
 
 
 .sidebar #logoHeader {
-
+    
     background-image: url('/images/avatar-evoy-fundoazul.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     scale: auto;
     width: auto;
-    height: 170px;
+    height: 100px;
     display: block;
     top: 0;
     left: 0;
@@ -244,7 +244,7 @@ header #status #status2 #notActivated #ball {
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
     position: absolute;
-    top: 115px;
+    top: 35px;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
