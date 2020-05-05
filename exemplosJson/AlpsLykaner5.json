@@ -1,0 +1,64 @@
+{
+    "data": [{
+        "timestamp": 1579877414,
+        "date": "2020-01-24 12:50:14",
+        "antennas": 1,
+        "terminal": {
+            "id": 28420207,
+            "description": "01B1A86F - Registrado 20200124 - Token reaproveitado",
+            "lastCommunication": 1588678939,
+            "lastCommunicationString": "2020-05-05 08:42:19",
+            "lastUpdate": 0,
+            "lastUpdateString": "1969-12-31 21:00:00",
+            "clientId": 67,
+            "profileId": 8098,
+            "profile": {
+                "id": 8098,
+                "name": "TESTES ALPS",
+                "clientId": 67,
+                "hardwareProfile": "ALPS Lykaner",
+                "lastUpdate": 0,
+                "lastUpdateDate": "1969-12-31 21:00:00",
+                "lastConfigUpdate": 0,
+                "lastConfigUpdateDate": "1969-12-31 21:00:00",
+                "type": 0
+            },
+            "connectionStatus": 3,
+            "updateStatus": 6
+        },
+        "message": "10bef58894f5c125e9395dbe",
+        "messageDecoded": [
+            ["Location Reset", "True"],
+            ["BSSID", "b0:be:76:f7:87:0c"],
+            ["RSSI [dBm]", null],
+            ["BSSID", "b0:4e:26:e7:d4:a7"],
+            ["RSSI [dBm]", null],
+            ["Keepalive", "False"],
+            ["Battery Status", "3"],
+            ["Battery Status", "Excellent"],
+            ["Temperature", 0],
+            ["Relocation Time", "< 6 minutes"],
+            ["Temperature", "0"],
+            ["Relocation Time", "0minutes"]
+        ],
+        "messageInformation": {
+            "sequenceNumber": 2,
+            "message": "10bef58894f5c125e9395dbe",
+            "sigfoxBaseStationList": [{
+                "id": "6F68",
+                "signalStrength": -119,
+                "signalToNoiseRatio": 6,
+                "latitude": -23,
+                "longitude": -47,
+                "repetitions": 3
+            }]
+        },
+        "rssi": -119,
+        "snr": 6,
+        "lost": false,
+        "ack": false,
+        "seqNumber": 2
+    }],
+    "recordsFiltered": 1,
+    "recordsTotal": 1290
+}

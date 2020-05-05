@@ -1,0 +1,56 @@
+{
+    "data": [{
+        "timestamp": 1588666908,
+        "date": "2020-05-05 05:21:48",
+        "antennas": 0,
+        "terminal": {
+            "id": 4081919,
+            "description": "Adicionado 0506 - Teste de Upload de Firmware",
+            "lastCommunication": 1588666908,
+            "lastCommunicationString": "2020-05-05 05:21:48",
+            "lastUpdate": 1584121226,
+            "lastUpdateString": "2020-03-13 14:40:26",
+            "clientId": 1520,
+            "profileId": 9486,
+            "profile": {
+                "id": 9486,
+                "name": "4081919",
+                "clientId": 1520,
+                "hardwareProfile": "Loka V2",
+                "lastUpdate": 1583948326,
+                "lastUpdateDate": "2020-03-11 14:38:46",
+                "lastConfigUpdate": 1583948326,
+                "lastConfigUpdateDate": "2020-03-11 14:38:46",
+                "type": 1
+            },
+            "connectionStatus": 3,
+            "updateStatus": 6
+        },
+        "message": "50509551edc2a535803c0000",
+        "messageDecoded": [
+            ["Location Reset Trigger", "False"],
+            [],
+            ["Periodic Location Resend", "False"],
+            [],
+            ["Movement Detection", "False"],
+            [],
+            ["Temperature", "20&deg;C"],
+            [],
+            ["BSSID", "50:95:51:ed:c2:a5"],
+            ["RSSI [dBm]", -38],
+            []
+        ],
+        "messageInformation": {
+            "sequenceNumber": 1861,
+            "message": "50509551edc2a535803c0000",
+            "sigfoxBaseStationList": []
+        },
+        "rssi": 0,
+        "snr": 0,
+        "lost": false,
+        "ack": false,
+        "seqNumber": 1861
+    }],
+    "recordsFiltered": 1,
+    "recordsTotal": 5339
+}
